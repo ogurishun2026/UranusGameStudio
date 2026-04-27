@@ -4,7 +4,7 @@
 
 set -e
 
-TEMPLATE_DIR="$(cd "$(dirname "$0")" && pwd)"
+TEMPLATE_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 TARGET_DIR="${1:-.}"
 WITH_MEMPALACE="${2:-}"
 
@@ -68,7 +68,7 @@ fi
 # Step 3: 可选安装 MemPalace
 echo -e "${GREEN}[3/3] 扩展模块...${NC}"
 if [ "$WITH_MEMPALACE" == "--with-mempalace" ]; then
-    EXTENSION_DIR="$TEMPLATE_DIR/../mempalace-extension"
+    EXTENSION_DIR="$TEMPLATE_DIR/extensions/mempalace"
 
     if [ -d "$EXTENSION_DIR" ]; then
         # 复制 .mcp.json
