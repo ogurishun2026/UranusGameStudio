@@ -1,0 +1,16 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# 临时文件
+*.tmp
+*.log
+
+# 敏感配置（如果需要）
+# settings.local.json
+# .mcp.json

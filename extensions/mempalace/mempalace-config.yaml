@@ -1,0 +1,25 @@
+# MemPalace 翼室配置
+# 复制到项目 .claude/ 目录下
+
+palace:
+  data_dir: {{PROJECT_PATH}}/.mempalace/palace
+
+  wings:
+    - name: project
+      keywords: [architecture, design, adr, spec, feature]
+      description: 项目架构、设计决策、技术规范
+
+    - name: session
+      keywords: [diary, log, decision, meeting]
+      description: 会话记录、会议摘要、决策过程
+
+    - name: code
+      keywords: [pattern, snippet, solution, bugfix]
+      description: 代码模式、解决方案、问题修复
+
+    - name: learning
+      keywords: [tutorial, concept, reference]
+      description: 学习笔记、概念解释
+
+agent_wing_mapping:
+  default: session

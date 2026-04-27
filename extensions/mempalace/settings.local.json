@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mempalace__*"
+    ]
+  },
+  "mcpServers": {
+    "mempalace": {
+      "command": "python",
+      "args": ["-m", "mempalace.mcp_server"],
+      "cwd": "{{MEMPALACE_PATH}}"
+    }
+  }
+}
